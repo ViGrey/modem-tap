@@ -44,11 +44,11 @@ Connections through Modem-Tap are throttled to 300bps and uses 8-N-1 ascii encod
     LISTENING PORT is 2600 by default
 
 #### Startup:
-    Upon startup, Modem-Tap will ask for a server address.  It will then ask for a server port.  After you supply both the address and the port, Modem-Tap will then listen at localhost on the LISTENING PORT you specified, which is 2600 if no port is specified.  You can then telnet into localhost:2600 and Modem-Tap will make a telnet connection out to the server address on the server port.  This connection will create the Bell 103 modulation frequency sounds for the incoming and outgoing internet traffic, which can be played through speakers and/or recorded to a WAV file.
+Upon startup, Modem-Tap will ask for a server address.  It will then ask for a server port.  After you supply both the address and the port, Modem-Tap will then listen at localhost on the LISTENING PORT you specified, which is 2600 if no port is specified.  You can then telnet into localhost:2600 and Modem-Tap will make a telnet connection out to the server address on the server port.  This connection will create the Bell 103 modulation frequency sounds for the incoming and outgoing internet traffic, which can be played through speakers and/or recorded to a WAV file.
 
-    After the connection is closed, if Modem-Tap has not been closed with ctrl-c, it should ask for another server address and then another server port.
+After the connection is closed, if Modem-Tap has not been closed with ctrl-c, it should ask for another server address and then another server port.
 
 #### WAV Files:
-    WAV files created by Modem-Tap will have the filename syntax of serveraddress-serverport-YYYYMMDDhhmmss.wav, for instance, a connection to vigrey.com on port 80 could produce the file name vigrey.com-80-20170717011252.wav.  This file will be a single channel 44100Hz 16-bit PCM WAV file.
+WAV files created by Modem-Tap will have the filename syntax of serveraddress-serverport-YYYYMMDDhhmmss.wav, for instance, a connection to vigrey.com on port 80 could produce the file name vigrey.com-80-20170717011252.wav.  This file will be a single channel 44100Hz 16-bit PCM WAV file.
 
-    A single WAV file is created for each connection to a server from Modem-Tap.  Multiple connections can be created on a single instance of running Modem-Tap.
+A single WAV file is created for each connection to a server from Modem-Tap.  Multiple connections can be created on a single instance of running Modem-Tap.
