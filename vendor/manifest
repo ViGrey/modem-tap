@@ -1,0 +1,11 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/gordonklaus/portaudio",
+			"repository": "https://github.com/gordonklaus/portaudio",
+			"revision": "e3db054b5758f438a1322fc1712f11074fad107a",
+			"branch": "master"
+		}
+	]
+}
