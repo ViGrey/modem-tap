@@ -19,12 +19,10 @@ func client() {
       break
     }
     res := buf[:l]
-    go func() {
-      // Insert artificial 200ms round trip latency for added authenticity
-      time.Sleep(200 * time.Millisecond)
-      baudInBuffer = append(baudInBuffer, bytesToBuffer8N1(res)...)
-      readBuffer = append(readBuffer, res...)
-    }()
+    // Add incoming traffic 200ms delay for authenticity of dial up connection
+    time.Sleep(200 * time.Millisecond)
+    baudInBuffer = append(baudInBuffer, bytesToBuffer8N1(res)...)
+    readBuffer = append(readBuffer, res...)
   }
   if telnetOut != nil {
     telnetOut.Close()
