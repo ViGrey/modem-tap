@@ -49,6 +49,6 @@ Upon startup, Modem-Tap will ask for a server address.  It will then ask for a s
 After the connection is closed, if Modem-Tap has not been closed with ctrl-c, it should ask for another server address and then another server port.
 
 #### WAV Files:
-WAV files created by Modem-Tap will have the filename syntax of serveraddress-serverport-YYYYMMDDhhmmss.wav, for instance, a connection to vigrey.com on port 80 could produce the file name vigrey.com-80-20170717011252.wav.  This file will be a single channel 44100Hz 16-bit PCM WAV file.
+WAV files created by Modem-Tap will have the filename syntax of serveraddress-serverport-YYYYMMDDhhmmss.wav, for instance, a connection to vigrey.com on port 23 could produce the file name vigrey.com-23-20170717011252.wav.  This file will be a single channel 44100Hz 16-bit PCM WAV file.
 
 A single WAV file is created for each connection to a server from Modem-Tap.  Multiple connections can be created on a single instance of running Modem-Tap.
